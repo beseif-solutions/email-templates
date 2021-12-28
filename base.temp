@@ -150,7 +150,7 @@
 
 
 						<!-- CARD -->
-						{{#if (some (resolve card.[0].title) (resolve card.[0].content))}}
+						{{#if (resolve card.[0].title)}}
 						<tr>
 							<td class="w320" style="width:635px!important;">
 								<br />
