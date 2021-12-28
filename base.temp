@@ -41,7 +41,7 @@
 
 									<!--//CABECERA//-->
 
-									<table cellpadding="0" cellspacing="0" class="w320"
+									<table cellpadding="0" cellspacing="0" class=""
 										style="width:635px!important;border-collapse:collapse!important;">
 
 										<tr>
@@ -101,7 +101,7 @@
 			<td
 				style="background-color:#eeeeee;font-size:16px;color:#333333;text-align:center;line-height:24px;border-collapse:collapse;padding:0px;">
 				<center>
-					<table cellspacing="0" cellpadding="0" class="w320"
+					<table cellspacing="0" cellpadding="0" class=""
 						style="width:100%;background-color:white;width:635px!important;border-collapse:collapse!important;">
 
 						<!-- TITLE -->
@@ -119,7 +119,7 @@
 							<td
 								style="padding:25px 40px 10px 40px;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;width:100%!important;">
 								{{#each main}}
-									<p>{{this}}</p>
+								<p>{{this}}</p>
 								{{/each}}
 							</td>
 						</tr>
@@ -135,7 +135,7 @@
 
 									<tr>
 										<td class="button">
-											<center style="text-align:center;"> 
+											<center style="text-align:center;">
 												<a href="{{button.url}}"
 													style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
 													{{button.text}}
@@ -148,7 +148,7 @@
 						</tr>
 						<!-- END: BUTTON -->
 
-						
+
 						<!-- CARD -->
 						{{#if card}}
 						<tr>
@@ -166,13 +166,13 @@
 																<td class="mini-block"
 																	style="border:1px solid #e5e5e5;border-radius:5px;padding:30px;text-align:left;width:253px;font-size:16px;color:#333333;line-height:24px;border-collapse:collapse;background-color:#ffffff;">
 																	{{#each card}}
-																		<p class="header-sm"
-																			style="font-size:18px;font-weight:700;line-height:normal;color:#333333;">
-																			{{this.title}} 
-																		</p>
-																		{{#each this.content}}
-																			<p>{{this}}</p>
-																		{{/each}}
+																	<p class="header-sm"
+																		style="font-size:18px;font-weight:700;line-height:normal;color:#333333;">
+																		{{this.title}}
+																	</p>
+																	{{#each this.content}}
+																	<p>{{this}}</p>
+																	{{/each}}
 																	{{/each}}
 																</td>
 															</tr>
@@ -190,122 +190,144 @@
 
 						<!-- DETAILS -->
 						{{#if details}}
-							{{#with details}}
-								<tr>
-									<td class="w320" style="width:635px !important;"> <br />
-										<table cellspacing="0" cellpadding="0"
-											style="width:100%;background-color:white;border-collapse:collapse !important;">
-											<tr>
-												<td class="mini-container-left" style="background-color:#ffffff;width:100%;padding:20px 40px;">
-													<table cellpadding="0" cellspacing="0" style="width:100%;">
-														<tr>
-															<td>
-																<table cellpadding="0" cellspacing="0" style="width:100%">
-																	<tr>
-																		<td
-																			style="text-align:left;padding-bottom:5px;color:#19a9d0;font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
-																			<h4 style="color:#19a9d0;margin-bottom:10px;">
-																				Detalles del pedido 
-																				</h4>
-																		</td>
-																	</tr>
-																</table>
-															</td>
-														</tr>
-													</table>
+						{{#with details}}
+						<tr>
+							<td class="w320" style="width:635px !important;"> <br />
+								<table cellspacing="0" cellpadding="0"
+									style="width:100%;background-color:white;border-collapse:collapse !important;">
+									<tr>
+										<td class="mini-container-left" style="background-color:#ffffff;width:100%;padding:20px 40px;">
+											<table cellpadding="0" cellspacing="0" style="width:100%;">
+												<tr>
+													<td>
+														<table cellpadding="0" cellspacing="0" style="width:100%">
+															<tr>
+																<td
+																	style="text-align:left;padding-bottom:5px;color:#19a9d0;font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
+																	<h4 style="color:#19a9d0;margin-bottom:10px;">
+																		Detalles del pedido
+																	</h4>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
 
-													<table cellpadding="0" cellspacing="0" style="width:100%;">
-														<tr>
-															<td style="border:none;border-radius:5px;">
-																<table cellspacing="0" cellpadding="0"
-																	style="width:100%;border-collapse:separate !important;">
-																	<tr>
-																		<td
-																			style="padding:10px 0px 20px 0px;text-align:left;width:auto;font-size:16px;color:#333333;line-height:24px;border-collapse:collapse;background-color:#ffffff;border:none;">
-																			
-																			<!-- ITEM -->
-																			{{#each items}}
+											<table cellpadding="0" cellspacing="0" style="width:100%;">
+												<tr>
+													<td style="border:none;border-radius:5px;">
+														<table cellspacing="0" cellpadding="0"
+															style="width:100%;border-collapse:separate !important;">
+															<tr>
+																<td
+																	style="padding:10px 0px 20px 0px;text-align:left;width:auto;font-size:16px;color:#333333;line-height:24px;border-collapse:collapse;background-color:#ffffff;border:none;">
+
+																	<!-- ITEM -->
+																	{{#each items}}
+																	<table cellspacing="0" cellpadding="0"
+																		style="width:100%;margin:20px 0px 25px 0px;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
+																		<tr>
+																			<td style="text-align:left;padding-right:20px;width:24%;">
+																				<img
+																					style="width:100px;height:100px;object-fit:cover;border-radius:5px;margin-right:20px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;"
+																					src="{{this.image}}" />
+																			</td>
+																			<td style="width:50%;">
 																				<table cellspacing="0" cellpadding="0"
-																					style="width:100%;margin:20px 0px 25px 0px;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
+																					style="width:100%;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
 																					<tr>
-																						<td style="text-align:left;padding-right:20px;width:24%;">
-																							<img
-																								style="width:100px;height:100px;object-fit:cover;border-radius:5px;margin-right:20px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;"
-																								src="{{this.image}}"/>
-																						</td>
-																						<td style="width:50%;">
-																							<table cellspacing="0" cellpadding="0"
-																								style="width:100%;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
-																								<tr>
-																									<td class="item-col"
-																										style="font-weight:600;width:100%;text-align:left;vertical-align:top;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;padding-top:0px;vertical-align:top;">
-																										{{this.name}}
-																									</td>
-																								</tr>
-																							</table>
-																							<table cellspacing="0" cellpadding="0"
-																								style="width:100%;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
-																								<tr>
-																									<td class="item-col"
-																										style="width:100%;text-align:left;vertical-align:top;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;padding-top:0px;vertical-align:top;">
-																										{{this.description}}
-																									</td>
-																								</tr>
-																							</table>
-																						</td>
-																						<td style="width:26%;">
-																							<table cellspacing="0" cellpadding="0"
-																								style="width:100%;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
-																								<tr>
-																									<td style="text-align: right">
-																										{{this.price}}
-																									</td>
-																								</tr>
-																							</table>
+																						<td class="item-col"
+																							style="font-weight:600;width:100%;text-align:left;vertical-align:top;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;padding-top:0px;vertical-align:top;">
+																							{{this.name}}
 																						</td>
 																					</tr>
 																				</table>
-																			{{/each}}
-																			<!-- END: ITEM -->
-
-																			<!-- ADDITIONAL -->
-																			{{#each additional}}
 																				<table cellspacing="0" cellpadding="0"
-																					style="width:100%;border-collapse:separate !important;border-top:1px solid #e5e5e5">
+																					style="width:100%;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
 																					<tr>
-																						<td
-																							style="padding:0px;text-align:left;width:auto;font-size:16px;color:#333333;border-collapse:collapse;background-color:#ffffff;">
-
-																							<table cellspacing="0" cellpadding="0"
-																								style="width:100%;background-color:white;border-collapse:collapse !important;">
-																								<tr>
-																									<td class="item-col"
-																										style="width:40%;min-width:220px;font-weight:bold;padding-top:15px;text-align:left;vertical-align:top;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;vertical-align:top;">
-																										{{this.name}}
-																									</td>
-																									<td class="item-col2"
-																										style="padding-top:15px;text-align:right;vertical-align:top;font-size:16px;color:#333333;line-height:24px;border-collapse:collapse;vertical-align:top;">
-																										{{this.value}}
-																									</td>
-																								</tr>
-																							</table>
+																						<td class="item-col"
+																							style="width:100%;text-align:left;vertical-align:top;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;padding-top:0px;vertical-align:top;">
+																							{{this.description}}
 																						</td>
 																					</tr>
 																				</table>
-																			{{/each}}
-																			<!-- ADDITIONAL -->
-																		</td>
-																	</tr>
-																</table>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							{{/with}}
+																			</td>
+																			<td style="width:26%;">
+																				<table cellspacing="0" cellpadding="0"
+																					style="width:100%;table-layout:fixed;background-color:white;border-collapse:collapse !important;">
+																					<tr>
+																						<td style="text-align: right">
+																							{{this.price}}
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																	{{/each}}
+																	<!-- END: ITEM -->
+
+																	<!-- ADDITIONAL -->
+																	{{#each additional}}
+																	<table cellspacing="0" cellpadding="0"
+																		style="width:100%;border-collapse:separate !important;{{#unless @index}}border-top:1px solid #e5e5e5;{{/unless}}">
+																		<tr>
+																			<td
+																				style="padding:0px;text-align:left;width:auto;font-size:16px;color:#333333;border-collapse:collapse;background-color:#ffffff;">
+
+																				<table cellspacing="0" cellpadding="0"
+																					style="width:100%;background-color:white;border-collapse:collapse !important;">
+																					<tr>
+																						<td class="item-col"
+																							style="width:40%;min-width:220px;font-weight:bold;padding-top:15px;text-align:left;vertical-align:top;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;vertical-align:top;">
+																							{{this.name}}
+																						</td>
+																						<td class="item-col2"
+																							style="padding-top:15px;text-align:right;vertical-align:top;font-size:16px;color:#333333;line-height:24px;border-collapse:collapse;vertical-align:top;">
+																							{{this.value}}
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																	<table cellspacing="0" cellpadding="0"
+																		style="width:100%;border-collapse:separate !important;">
+																		<tr>
+																			<td
+																				style="padding:0px;text-align:left;width:auto;font-size:16px;color:#333333;border-collapse:collapse;background-color:#ffffff;">
+
+																				<table cellspacing="0" cellpadding="0"
+																					style="width:100%;background-color:white;border-collapse:collapse !important;">
+																					<tr>
+																						<td class="item-col"
+																							style="width:40%;min-width:220px;font-weight:bold;padding-top:15px;text-align:left;vertical-align:top;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;vertical-align:top;">
+																							{{this.name}}
+																						</td>
+																						<td class="item-col2"
+																							style="padding-top:15px;text-align:right;vertical-align:top;font-size:16px;color:#333333;line-height:24px;border-collapse:collapse;vertical-align:top;">
+																							{{this.value}}
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																	{{/each}}
+																	<!-- ADDITIONAL -->
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						{{/with}}
 						{{/if}}
 						<!-- END: DETAILS -->
 					</table>
@@ -322,15 +344,15 @@
 							<td>
 								<center style="padding:25px 0 25px; color:#676767;">
 									<div>
-										<strong>Atención al cliente</strong> 
+										<strong>Atención al cliente</strong>
 									</div>
 									<div>
 										Email: <a href="mailto:hello@beseif.com" target="_blank"
-										style="color:#676767;text-decoration:none!important;">hello@beseif.com</a>
+											style="color:#676767;text-decoration:none!important;">hello@beseif.com</a>
 									</div>
 									<div>
 										<a href="https://beseif.com" target="_blank"
-										style="color:#676767;text-decoration:none!important;">www.beseif.com</a>
+											style="color:#676767;text-decoration:none!important;">www.beseif.com</a>
 									</div>
 								</center>
 							</td>
