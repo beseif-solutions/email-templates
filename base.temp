@@ -150,7 +150,7 @@
 
 
 						<!-- CARD -->
-						{{#if (some card.[0].title card.[0].content)}}
+						{{#if (some (resolve card.[0].title) (resolve card.[0].content))}}
 						<tr>
 							<td class="w320" style="width:635px!important;">
 								<br />
@@ -270,7 +270,7 @@
 
 																	<!-- ADDITIONAL -->
 																	{{#each additional}}
-																		{{#if this.value}}
+																		{{#if (resolve this.value)}}
 																			<table cellspacing="0" cellpadding="0"
 																				style="width:100%;border-collapse:separate !important;{{#unless @index}}border-top:1px solid #e5e5e5;{{/unless}}">
 																				<tr>
