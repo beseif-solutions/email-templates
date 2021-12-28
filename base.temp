@@ -150,7 +150,7 @@
 
 
 						<!-- CARD -->
-						{{#if (some (card.[0].title) (card.[0].content))}}
+						{{#if (some card.[0].title card.[0].content)}}
 						<tr>
 							<td class="w320" style="width:635px!important;">
 								<br />
