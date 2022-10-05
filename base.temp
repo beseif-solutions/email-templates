@@ -135,12 +135,9 @@
 
 									<tr>
 										<td class="button">
-											<center style="text-align:center;">
-												<a class="template-button" href="{{button.url}}" target="_blank" rel="noopener noreferrer"
-													style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
-													{{button.text}}
-												</a>
-											</center>
+											<a class="template-button" href="{{button.url}}" target="_blank" rel="noopener noreferrer" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
+												<span>{{button.text}}</span>
+											</a>
 										</td>
 									</tr>
 								</table>
