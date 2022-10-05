@@ -130,17 +130,15 @@
 							<td class="button"
 								style="margin-bottom:20px;padding:10px 0px;font-size:16px;color:#333333;text-align:center;line-height:24px;border-collapse:collapse;">
 
-								<table cellspacing="0" cellpadding="0" class="w320"
-									style="width:635px!important;border-collapse:collapse!important;">
-
-									<tr>
-										<td class="button">
-											<a class="template-button" href={{button.url}} target="_blank" rel="noopener noreferrer" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
-												<span>{{button.text}}</span>
-											</a>
-										</td>
-									</tr>
-								</table>
+								 <table cellspacing="0" cellpadding="0" class="w320" style="width:635px!important;border-collapse:collapse!important;">
+								      <tr>
+									  <td>
+									      <a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
+										 {{button.text}}         
+									      </a>
+									  </td>
+								      </tr>
+								  </table>
 							</td>
 						</tr>
 						<!-- END: BUTTON -->
