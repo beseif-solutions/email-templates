@@ -459,14 +459,6 @@
 						</tr>
 						<!-- END: MAIN CONTENT -->
 
-						<tr><td>
-						
-							<a href="https://www.beseif.com" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
-										 			{{button.text}}         
-									      </a>
-
-						</td></tr>
-
 						<!-- BUTTON -->
 						<tr>
 							<td class="button"
@@ -475,14 +467,16 @@
 								 <table cellspacing="0" cellpadding="0" class="w320" style="width:635px!important;border-collapse:collapse!important;">
 								      <tr>
 									  <td>
-												<a href="{{button.url}}" target="_blank" style="">
+										<!-- 
+										<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
 										 			{{button.text}}         
 									      </a>
-									      <a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
+												-->
+
+												<a href="www.beseif.com" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
 										 			{{button.text}}         
-									      </a>
-												<a href="https://beseif.com" target="_blank"
-													style="color:#676767;text-decoration:none!important;">www.beseif.com</a>
+									      </a>	
+									      
 									  </td>
 								      </tr>
 								  </table>
