@@ -467,14 +467,8 @@
 								 <table cellspacing="0" cellpadding="0" class="w320" style="width:635px!important;border-collapse:collapse!important;">
 								      <tr>
 									  <td>
-										<!-- 
-										<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
-										 			{{button.text}}         
-									      </a>
-												-->
-
 												<a href="https://beseif.com" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
-										 			Text: {{button.text}}         
+										 			{{button.text}}         
 									      </a>	
 									      
 									  </td>
