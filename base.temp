@@ -220,6 +220,18 @@
 		font-size: 1px !important;
 	}
 
+	{{#if submerchant.colour}}
+	.template-button {
+		padding: 10px 15px;
+		border: 1px solid {{submerchant.colour}};
+		border-radius: 5px;
+		color: {{submerchant.colour}};
+		display: inline-block;
+		font-weight: regular;
+		text-align: center;
+		text-decoration: none;
+	}
+	{{else}}
 	.template-button {
 		padding: 10px 15px;
 		border: 1px solid #19a9d0;
@@ -230,7 +242,7 @@
 		text-align: center;
 		text-decoration: none;
 	}
-
+	{{/if}}
 	/* SMALL DEVICES */
 	@media screen and (max-device-width:480px) {
 		.container-for-gmail-android {
@@ -374,7 +386,7 @@
 								<center>
 
 									<!--//CABECERA//-->
-
+									{{#if (eq submerchant.name "Beseif")}}
 									<table cellpadding="0" cellspacing="0" class=""
 										style="width:635px!important;border-collapse:collapse!important;">
 
@@ -422,7 +434,37 @@
 											</td>
 										</tr>
 									</table>
+									{{else}}
+									<table cellpadding="0" cellspacing="0" class=""
+										style="width:635px!important;border-collapse:collapse!important;">
 
+										<tr>
+
+											<td class="pull-left mobile-header-padding-left"
+												style="text-align:left;width:160px!important;padding-left:0!important;vertical-align:middle;font-size:16px;color:#333333;text-align:left;line-height:24px;border-collapse:collapse;">
+												<a href="{{submerchant.url}}" style="color:#676767;text-decoration:none!important;">
+												
+													<img width="137" height="auto"
+														src="{{submerchant.logo}}"
+														style="max-width:600px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;">
+
+												</a>
+										</td>
+
+											<td class="pull-right mobile-header-padding-right"
+												style="text-align:right;width:160px!important;padding-right:0!important;color:#333333;font-size:16px;text-align:right;line-height:24px;border-collapse:collapse;">
+
+												<a href="https://beseif.com" style="color:#676767;text-decoration:none!important;">
+
+													<img width="137" height="auto"
+														src="https://beseif.com/resources/images/marketplace/normal/beseif_{{submerchant.name}}.png"
+														style="max-width:600px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;">
+
+												</a>
+											</td>
+										</tr>
+									</table>
+									{{/if}}
 								</center>
 								<!--[if gte mso 9]> </v:textbox> </v:rect> <![endif]-->
 							</td>
@@ -467,9 +509,16 @@
 								 <table cellspacing="0" cellpadding="0" class="w320" style="width:635px!important;border-collapse:collapse!important;">
 								      <tr>
 									  <td>
-												<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
+										
+										{{#if submerchant.colour}}
+										<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid {{submerchant.colour}};border-radius:5px;color:{{submerchant.colour}};display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
 										 			{{button.text}}         
-									      </a>	
+									    </a>
+										{{else}}
+										<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid #19a9d0;border-radius:5px;color:#19a9d0;display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
+										 			{{button.text}}         
+									    </a>
+										{{/if}}
 									      
 									  </td>
 								      </tr>
@@ -532,12 +581,22 @@
 													<td>
 														<table cellpadding="0" cellspacing="0" style="width:100%">
 															<tr>
+																{{#if submerchant.colour}}
+																<td
+																	style="text-align:left;padding-bottom:5px;color:{{submerchant.colour}};font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
+																	<h4 style="color:{{submerchant.colour}};margin-bottom:10px;">
+																		Detalles del pedido
+																	</h4>
+																</td>
+																{{else}}
 																<td
 																	style="text-align:left;padding-bottom:5px;color:#19a9d0;font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
 																	<h4 style="color:#19a9d0;margin-bottom:10px;">
 																		Detalles del pedido
 																	</h4>
 																</td>
+																
+																{{/if}}
 															</tr>
 														</table>
 													</td>
