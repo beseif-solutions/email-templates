@@ -220,12 +220,12 @@
 		font-size: 1px !important;
 	}
 
-	{{#if submerchant.colour}}
+	{{#if submerchant.color}}
 	.template-button {
 		padding: 10px 15px;
-		border: 1px solid {{submerchant.colour}};
+		border: 1px solid {{submerchant.color}};
 		border-radius: 5px;
-		color: {{submerchant.colour}};
+		color: {{submerchant.color}};
 		display: inline-block;
 		font-weight: regular;
 		text-align: center;
@@ -510,8 +510,8 @@
 								      <tr>
 									  <td>
 										
-										{{#if submerchant.colour}}
-										<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid {{submerchant.colour}};border-radius:5px;color:{{submerchant.colour}};display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
+										{{#if submerchant.color}}
+										<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid {{submerchant.color}};border-radius:5px;color:{{submerchant.color}};display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
 										 			{{button.text}}         
 									    </a>
 										{{else}}
@@ -581,10 +581,10 @@
 													<td>
 														<table cellpadding="0" cellspacing="0" style="width:100%">
 															<tr>
-																{{#if submerchant.colour}}
+																{{#if submerchant.color}}
 																<td
-																	style="text-align:left;padding-bottom:5px;color:{{submerchant.colour}};font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
-																	<h4 style="color:{{submerchant.colour}};margin-bottom:10px;">
+																	style="text-align:left;padding-bottom:5px;color:{{submerchant.color}};font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
+																	<h4 style="color:{{submerchant.color}};margin-bottom:10px;">
 																		Detalles del pedido
 																	</h4>
 																</td>
