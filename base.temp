@@ -220,7 +220,7 @@
 		font-size: 1px !important;
 	}
 
-	{{#if (resolve submerchant.color)}}
+	{{#if submerchant.color}}
 	.template-button {
 		padding: 10px 15px;
 		border: 1px solid {{submerchant.color}};
@@ -510,7 +510,7 @@
 								      <tr>
 									  <td>
 										
-										{{#if (resolve submerchant.color)}}
+										{{#if submerchant.color}}
 										<a href="{{button.url}}" target="_blank" style="padding:10px 15px;border:1px solid {{submerchant.color}};border-radius:5px;color:{{submerchant.color}};display:inline-block;font-weight:regular;text-align:center;text-decoration:none;">
 										 			{{button.text}}         
 									    </a>
@@ -581,7 +581,7 @@
 													<td>
 														<table cellpadding="0" cellspacing="0" style="width:100%">
 															<tr>
-																{{#if (resolve submerchant.color)}}
+																{{#if submerchant.color}}
 																<td
 																	style="text-align:left;padding-bottom:5px;color:{{submerchant.color}};font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
 																	<h4 style="color:{{submerchant.color}};margin-bottom:10px;">
