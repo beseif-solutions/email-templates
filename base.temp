@@ -566,11 +566,6 @@
 						</tr>
 						{{/if}}
 						<!-- END: CARD -->
-
-						COLOR {{submerchant.color}}
-						COLOR2 {{submerchant.color2}}
-						COLOR3 {{submerchant.color3}}
-
 						<!-- DETAILS -->
 						{{#if details}}
 						{{#with details}}
