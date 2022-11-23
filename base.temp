@@ -571,6 +571,8 @@
 						{{#if details}}
 						{{#with details}}
 						COLOR {{submerchant.color}}
+						COLOR2 {{submerchant.color2}}
+						COLOR3 {{submerchant.color3}}
 						<tr>
 							<td class="w320" style="width:635px !important;"> <br />
 								<table cellspacing="0" cellpadding="0"
