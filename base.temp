@@ -570,6 +570,7 @@
 						<!-- DETAILS -->
 						{{#if details}}
 						{{#with details}}
+						COLOR {{submerchant.color}}
 						<tr>
 							<td class="w320" style="width:635px !important;"> <br />
 								<table cellspacing="0" cellpadding="0"
