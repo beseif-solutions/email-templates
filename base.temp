@@ -456,7 +456,7 @@
 
 												<a href="https://beseif.com" style="color:#676767;text-decoration:none!important;">
 
-													<img width="137" height="auto"
+													<img width="127" height="auto"
 														src="https://beseif.com/resources/images/marketplace/normal/beseif_{{submerchant.name}}.png"
 														style="max-width:600px;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;">
 
@@ -570,6 +570,7 @@
 						<!-- DETAILS -->
 						{{#if details}}
 						{{#with details}}
+						COLOR {{submerchant.color}}
 						<tr>
 							<td class="w320" style="width:635px !important;"> <br />
 								<table cellspacing="0" cellpadding="0"
