@@ -87,11 +87,6 @@
 		text-decoration: none !Important;
 	}
 
-	a {
-		/* color: #333333; */
-		text-decoration: none !important;
-	}
-
 	p {
 		margin-bottom: 10px !Important;
 		color: #333333 !Important;
@@ -241,6 +236,17 @@
 		font-weight: regular;
 		text-align: center;
 		text-decoration: none;
+	}
+	{{/if}}
+	{{#if submerchant.color}}
+	a {
+		color: {{submerchant.color}}!important;
+		text-decoration: none !important;
+	}
+	{{else}}
+	a {
+		color: #19a9d0!important;
+		text-decoration: none !important;
 	}
 	{{/if}}
 	/* SMALL DEVICES */
