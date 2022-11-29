@@ -578,29 +578,16 @@
 											<table cellpadding="0" cellspacing="0" style="width:100%;">
 												<tr>
 													<td>
-														{{#if (resolve submerchant.color)}}
-															<table cellpadding="0" cellspacing="0" style="width:100%">
-																<tr>
-																	<td
-																		style="text-align:left;padding-bottom:5px;color:{{submerchant.color}};font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
-																		<h4 style="color:{{submerchant.color}};margin-bottom:10px;">
-																			Detalles del pedido
-																		</h4>
-																	</td>
-																</tr>
-															</table>
-														{{else}}
-															<table cellpadding="0" cellspacing="0" style="width:100%">
-																<tr>
-																	<td
-																		style="text-align:left;padding-bottom:5px;color:#19a9d0;font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
-																		<h4 style="color:#19a9d0;margin-bottom:10px;">
-																			Detalles del pedido
-																		</h4>
-																	</td>
-																</tr>
-															</table>
-														{{/if}}
+														<table cellpadding="0" cellspacing="0" style="width:100%">
+															<tr>
+																<td
+																	style="text-align:left;padding-bottom:5px;font-size:16px;line-height:24px;border-collapse:collapse;border-bottom:1px solid #e5e5e5;">
+																	<h4 style="color:#333333;margin-bottom:10px;">
+																		Detalles del pedido
+																	</h4>
+																</td>
+															</tr>
+														</table>
 													</td>
 												</tr>
 											</table>
