@@ -535,7 +535,7 @@
 
 
 						<!-- CARD -->
-						{{#if (resolve card.[0].title)}}
+						{{#if card}}
 						<tr>
 							<td class="w320" style="width:635px!important;">
 								<br />
@@ -555,9 +555,8 @@
 																		style="font-size:18px;font-weight:700;line-height:normal;color:#333333;">
 																		{{this.title}}
 																	</p>
-																	{{#each this.content}}
-																	<p>{{this}}</p>
-																	{{/each}}
+																	
+																	<p>{{this.content}}</p>
 																	{{/each}}
 																</td>
 															</tr>
